@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/css/style.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <a class="navbar-brand " href="#">
+                <img class="logo" src="~/images/heart.png" />
+                @Html.ActionLink("Hem", "Index", "Home")
+            </a>
+            <a class="nav-item active" href="#"> @Html.ActionLink("My Project", "Myprojects", "Home")            </a>
+            <a class="nav-item" href="#"> @Html.ActionLink("About...", "About", "Home")        </a>
+            <a class="nav-item" href="#"> @Html.ActionLink("Contact us", "Contact", "Home")            </a>
+
+        </nav>
+    </header>
+
+    <div class="main">
+        @RenderBody()
+    </div>
+
+    <footer class="foot">
+        <HR style="color:#987cb9">
+        <div class="row">
+            <small>Creat by &copy;Wei Cao.  @DateTime.Now.Year . @DateTime.Now.Month . @DateTime.Now.Day</small>
+        </div>
+    </footer>
+</body>
+</html>

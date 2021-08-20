@@ -1,0 +1,61 @@
+﻿body {
+    /*background-color:aquamarine;*/
+    width:95%;
+    margin:auto;
+}
+.nav {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.text{
+    font-display:block;
+    font-family:sans-serif;
+    font-size:16px;
+}
+.contactmain {
+    justify-content: center;
+    min-height: 450px;
+}
+.nav a {
+    width: 30%;
+    display: block;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    border: 0;
+    font-size: 16px;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+.main {
+    display: flex;
+    justify-content: center;
+    min-height:400px;
+}
+.logo{
+    margin-left:30px;
+    height:40px;
+}
+
+.photo {
+    margin-top: 50px;
+    width: 300px;
+    align-items:center;
+}
+.aboutme-main {
+    width: 80%;
+    
+    justify-content: center;
+}
+
+.foot {
+    text-align: center;
+}

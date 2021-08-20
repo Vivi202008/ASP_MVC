@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewData["Title"] = "About me";
+}
+
+<div class="row aboutme-main">
+    <div >
+        <img class="photo" src="~/images/aboutme.png" />
+    </div>
+    <div>
+        <h4>Name : @ViewBag.Name</h4>
+    </div>
+    <div >
+        <p><strong>About me: </strong>@ViewBag.Info</p>
+    </div>
+    <div >
+        <p><strong>Education1 : </strong> @ViewBag.Education</p>
+        <p><strong>Period1 : </strong> @ViewBag.EducationPeriod</p>
+    </div>
+    <div >
+        <p><strong>Education2 : </strong> @ViewBag.Education1</p>
+        <p><strong>Period2 : </strong> @ViewBag.EducationPeriod1</p>
+    
+    </div>
+</div>
