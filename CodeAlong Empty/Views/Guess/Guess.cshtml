@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewData["Title"] = "Guess a number";
+}
+
+
+<form method="POST" class="form">
+    <h2>Guess a number</h2>
+    <label>@ViewBag.Info </label>
+    <input type="text" id="guess" name="guess" />
+    <input type="submit" id="check" />
+    <br /><br />
+        
+    <p><label id="guesstimes" class="result"> @ViewBag.Times</label></p>
+    <p><label id="result" class="result"> @ViewBag.Msg   </label></p>
+</form>

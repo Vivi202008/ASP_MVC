@@ -12,6 +12,7 @@ namespace CodeAlong_Empty.Controllers
         {
             ViewBag.Name = "Wei Cao";
             ViewBag.Info = "This is my world, a small world.";
+            
             return View();
         }
 
@@ -42,8 +43,9 @@ namespace CodeAlong_Empty.Controllers
             ViewBag.Sokoban = "https://github.com/Vivi202008/sokoban_Game";
             ViewBag.Myweb = "https://github.com/Vivi202008/MyWebb";
             ViewBag.VendingMachine = "https://github.com/Vivi202008/VendingMachineApp_N";
-            ViewBag.Mvc = "https://github.com/Vivi202008/MVC_ASP";
+            ViewBag.Mvc = "https://github.com/Vivi202008/ASP_MVC";
             ViewBag.HangMan = "https://github.com/Vivi202008/HangmanGame";
+            ViewBag.Doctor = "~/css/style.css";
             return View();
         }
 

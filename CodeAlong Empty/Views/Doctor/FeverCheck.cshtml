@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewData["Title"] = "Check your temperature!";
+}
+
+<form method="POST" class="form">
+    <h3>Check your temperature for Fever</h3>
+
+    <label>@ViewBag.Info </label>
+    <input type="text" id="temp" name="temp"/>
+    <input type="submit" id="check" />
+    <input type="radio" id="fahrenheit" name="unit" value="Fahrenheit" />Fahrenheit
+    <input type="radio" id="celsius" name="unit" value="Celsius" checked/>Celsius  <br /><br />
+
+    <label id="result" class="result">@ViewBag.Msg </label>
+
+</form>

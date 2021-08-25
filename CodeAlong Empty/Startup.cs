@@ -17,6 +17,7 @@ namespace CodeAlong_Empty
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.AddSession();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -29,6 +30,7 @@ namespace CodeAlong_Empty
 
             app.UseStaticFiles();
             app.UseRouting();
+            app.UseSession();
 
             app.UseEndpoints(endpoints =>
             {
@@ -36,7 +38,17 @@ namespace CodeAlong_Empty
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}"
                     );
+                 endpoints.MapControllerRoute(
+                    name: "FeverCheck",
+                    pattern: "FeverCheck",
+                    defaults: new { controller = "Doctor", action = "FeverCheck" });
+                endpoints.MapControllerRoute(
+                    name: "Guess",
+                    pattern: "Guess",
+                    defaults: new { controller = "Guess", action = "Guess" });
             });
+
+           
         }
     }
 }
